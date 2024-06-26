@@ -3,6 +3,10 @@ import { MouseParallax } from "react-just-parallax";
 
 import PlusSvg from "@assets/svg/PlusSvg";
 
+type BackgroundCirclesProps = {
+  parallaxRef: React.RefObject<HTMLDivElement>;
+};
+
 export const Gradient = () => {
   return (
     <>
@@ -35,7 +39,9 @@ const Rings = () => {
   );
 };
 
-export const BackgroundCircles = ({ parallaxRef }) => {
+export const BackgroundCircles: React.FC<BackgroundCirclesProps> = ({
+  parallaxRef,
+}) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
