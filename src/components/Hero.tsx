@@ -1,6 +1,6 @@
 import { curve, heroBackground, robot } from "@assets/index";
 import CompanyLogos from "@components/CompanyLogos";
-import Generating from "@components/Generating";
+import Generating from "@components/common/Generating";
 import Notification from "@components/Notification";
 import Button from "@components/common/Button";
 import Section from "@components/common/Section";

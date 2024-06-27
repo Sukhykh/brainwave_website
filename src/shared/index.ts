@@ -33,7 +33,7 @@ export interface PricingItem {
   id: string;
   title: string;
   description: string;
-  price: string;
+  price: string | null;
   features: string[];
 }
 
@@ -44,6 +44,7 @@ export interface BenefitsItem {
   backgroundUrl: string;
   iconUrl: string;
   imageUrl: string;
+  light?: boolean;
 }
 
 export interface SocialItem {
